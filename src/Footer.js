@@ -6,7 +6,7 @@ export default function Footer() {
       <a
         href="https://github.com/callytat/weather-react-cally"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         class="link"
       >
         Open-source code here on Github.
