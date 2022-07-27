@@ -11,8 +11,8 @@ export default function Weather(props) {
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: "Wednesday 2:00",
-      desctiption: response.data.weather[0].description,
-      imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+      description: response.data.weather[0].description,
+      iconUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
       wind: response.data.wind.speed,
       city: response.data.name,
     });
@@ -72,7 +72,7 @@ export default function Weather(props) {
           <div className="col-6">
             <ul className="weather-conditions">
               <li>Humidity: {weatherData.humidity}%</li>
-              <li>Wind: {weatherData.wind} mph</li>
+              <li>Wind: {Math.round(weatherData.wind)} mph</li>
             </ul>
           </div>
         </div>
