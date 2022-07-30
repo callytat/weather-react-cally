@@ -63,3 +63,7 @@
   position: relative;
   top: -15px;
 }
+
+.Weather canvas {
+  margin: 10px auto;
+}
