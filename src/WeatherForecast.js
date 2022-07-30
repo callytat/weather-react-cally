@@ -17,13 +17,23 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <div className="row">
           <div className="col">
-            <WeatherForecastDay data={forecast[0]} />
+            <div className="row">
+              {forecast.map(function (dailyForecast, index) {
+                if (index < 5) {
+                  return (
+                    <div className="col" key={index}>
+                      <WeatherForecastDay data={dailyForecast} />
+                    </div>
+                  );
+                }
+              })}
+            </div>
           </div>
         </div>
       </div>
     );
   } else {
-    const apiKey = "8440d16dc7b02d6a7589879556b1eead";
+    let apiKey = "8440d16dc7b02d6a7589879556b1eead";
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let units = "metric";
