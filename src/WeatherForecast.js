@@ -37,7 +37,7 @@ export default function WeatherForecast(props) {
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
     let units = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
 
     axios.get(apiUrl).then(handleResponse);
 
