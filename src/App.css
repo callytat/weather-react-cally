@@ -29,10 +29,11 @@ h3 {
   padding: 0;
   font-weight: 300;
   line-height: 30px;
-  color: #f05163;
+  color: rgb(34, 185, 245);
   font-size: 22px;
 }
 
-.description:first-letter {
-  text-transform: capitalize;
+.Footer {
+  text-align: center;
+  font-size: 16px;
 }

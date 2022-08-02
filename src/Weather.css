@@ -1,8 +1,8 @@
 .Weather {
-  width: 80%;
+  max-width: 900px;
   text-align: center;
   padding: 30px;
-  margin-top: 30px;
+  margin: 20px auto;
   background: radial-gradient(
     circle at 7.5% 24%,
     rgb(157, 228, 244) 0.1%,
@@ -15,7 +15,7 @@
 
 .Weather .card-group {
   display: flex;
-  width: 80%;
+  width: 100%;
 }
 
 .Weather .search-text-input {
@@ -44,16 +44,16 @@
 }
 
 .Weather .temperature {
-  font-weight: 00;
+  font-weight: 800;
   font-size: 40px;
   text-align: left;
 }
 
-.Weather .units {
+.WeatherTemperature .units {
   position: relative;
   top: -15px;
 }
 
-.Weather canvas {
+.WeatherInfo canvas {
   margin: 10px auto;
 }
